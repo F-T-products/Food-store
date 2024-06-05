@@ -219,6 +219,14 @@
 
 @media (max-width: 1024px) {
 
+    .btnup {
+        bottom: 86px;
+    }
+
+    .btnup span {
+        font-size: 12px;
+    }
+
     .product-wrap__top {
         padding: 20px;
     }

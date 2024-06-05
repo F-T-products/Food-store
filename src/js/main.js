@@ -213,33 +213,6 @@ myObj.queue = {
         });
     },
 
-    listBox: function () {
-        var items = document.querySelectorAll('.header-adop__info .adop-item');
-
-        if (items.length > 0) {
-            function updateItemMargins() {
-                items.forEach(function (item) {
-                    item.style.marginRight = '31px';
-                });
-
-                var visibleItems = Array.from(items).filter(function (item) {
-                    return getComputedStyle(item).display !== 'none';
-                });
-
-                if (visibleItems.length > 0) {
-                    visibleItems[visibleItems.length - 1].style.marginRight = '0';
-
-                    if (visibleItems.length === 2 || visibleItems.length === 3) {
-                        visibleItems[visibleItems.length - 1].style.marginRight = '0';
-                    }
-                }
-            }
-
-            updateItemMargins();
-            window.addEventListener('resize', updateItemMargins);
-        }
-    },
-
     folderFunck: function name(params) {
         const folderProductList = document.querySelector('.folder-product__list');
         const thumbsButton = document.querySelector('.folder-change__item.thumbs-in');

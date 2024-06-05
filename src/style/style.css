@@ -1820,6 +1820,10 @@ span.news-wrap-box__image img {
 
 /* контент */
 
+.folder-hide {
+    display: none;
+}
+
 .folder-menu.hide {
     display: none;
 }
@@ -2362,3 +2366,4 @@ span.news-wrap-box__image img {
 }
 
 /* Товары в витрине */
+
