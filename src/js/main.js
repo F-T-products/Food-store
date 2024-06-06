@@ -464,5 +464,5 @@ myObj.queue = {
                 closeSortingPopap();
             }
         });
-    }
+    },
 };
